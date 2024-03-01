@@ -90,8 +90,8 @@ html {
 }
 
 .pic_date {
-  width: 150px;
-  height: 150px;
+  width: 15vw;
+  height: 15vw;
   object-fit: cover;
 }
 
