@@ -90,8 +90,8 @@ html {
 }
 
 .pic_date {
-  width: 15vw;
-  height: 15vw;
+  width: 30vw;
+  height: 30vw;
   object-fit: cover;
 }
 
@@ -116,10 +116,16 @@ tr > td > p {
   color: red;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 500px) {
   .pic_container {
     position: absolute;
     top: 30vh;
     left: 1vw;
+  }
+
+  .pic_date {
+    width: 15vw;
+    height: 15vw;
+    object-fit: cover;
   }
 }
