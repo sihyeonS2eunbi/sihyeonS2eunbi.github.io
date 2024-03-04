@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/qumpellkano12');
 
+@font-face {
+  font-family: 'ChosunSm';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.1/ChosunSm.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --font-size-lg: calc(2rem + 4vw);
   --font-size-md: calc(1.5rem + 3vw);
@@ -68,6 +76,14 @@ html {
   align-items: center;
 }
 
+.section2 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .content {
   width: 100vw;
   height: 50vh;
@@ -78,15 +94,59 @@ html {
 }
 
 .pic {
-  width: 60vw;
-  height: 40vh;
+  width: 100vw;
+  height: 50vh;
   object-fit: cover;
 }
 
 .pic_container {
   position: absolute;
-  top: 30vh;
-  left: -5vw;
+  top: 35vh;
+  left: 1vw;
+}
+
+/* .ment_container {
+  position: absolute;
+  right: 1vw;
+  bottom: -5vh;
+  font-family: 'ChosunSm';
+  font-size: var(--font-size-ssm);
+  width: 50vw;
+} */
+
+.ment_container {
+  position: fixed;
+  right: 1vw;
+  top: 45vh;
+  width: 50vw;
+  height: 10vw;
+  background-image: url('./ment.png'); /* 배경 이미지로 설정 */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ment_container {
+  display: flex;
+}
+
+.name {
+  font-size: var(--font-size-sm);
+  font-weight: bold;
+  width: 35%;
+  text-align: right;
+}
+
+.middle {
+  font-size: var(--font-size-sm);
+  text-align: right;
+  width: 30%;
+}
+
+._3_ment {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  text-align: right;
 }
 
 .pic_date {
@@ -103,7 +163,6 @@ p {
 tr > td {
   text-align: center;
   font-family: 'Taviraj', serif;
-
   padding: 1vh 2vw;
 }
 
@@ -116,7 +175,70 @@ tr > td > p {
   color: red;
 }
 
-@media screen and (min-width: 500px) {
+.d_day {
+  color: #916939;
+  position: relative;
+  font-weight: bold;
+  background-image: url('./circle.png'); /* 배경 이미지로 설정 */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+._9169392 {
+  margin-left: 1vw;
+
+  font-family: 'Taviraj', serif;
+  color: #916939;
+  font-size: var(--font-size-ssm);
+}
+
+.img22 {
+  width: 15vw;
+  margin-left: 1vw;
+}
+
+.ment3 > p {
+  font-family: 'ChosunSm';
+  margin-left: 1vw;
+  margin-top: 10px;
+}
+
+/* .d_day::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('./circle.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.25 !important;
+  filter: alpha(opacity=25);
+  z-index: -1;
+} */
+
+.explain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100vw;
+  height: 50vh;
+  font-family: 'ChosunSm';
+}
+
+.map {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100vw;
+  height: 50vh;
+}
+
+.map_img {
+  width: 50vw;
+}
+
+@media screen and (min-width: 700px) {
   .pic_container {
     position: absolute;
     top: 30vh;
@@ -129,3 +251,66 @@ tr > td > p {
     object-fit: cover;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .pic {
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+  }
+
+  .ment_container {
+    position: fixed;
+    right: 1vw;
+    top: 40vh;
+    width: 30vw;
+    height: 10vw;
+    background-image: url('./ment.png'); /* 배경 이미지로 설정 */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .section2 {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .explain {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  ._9169392 {
+    margin-left: 1vw;
+
+    font-family: 'Taviraj', serif;
+    color: #916939;
+    font-size: var(--font-size-sm);
+  }
+
+  .img22 {
+    width: 8vw;
+  }
+
+  .ment3 > p {
+    font-family: 'ChosunSm';
+    margin-top: 20px;
+    font-size: var(--font-size-ssm);
+  }
+}
+
+/* .ment_container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    position: absolute;
+    right: 0.1vw;
+    bottom: -1vh;
+    font-family: 'ChosunSm';
+    font-size: var(--font-size-ssm);
+    width: 20vw;
+  } */
