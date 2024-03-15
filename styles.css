@@ -327,6 +327,47 @@ tr > td > p {
   color: red;
 }
 
+@media screen and (max-width: 450px) {
+  .time {
+    font-family: 'ChosunSm';
+    font-size: calc(1rem + 1vw);
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .loca {
+    font-family: 'ChosunSm';
+    font-size: calc(1rem + 1vw);
+  }
+
+  .way {
+    font-family: 'ChosunSm';
+    font-size: calc(1rem + 1vw);
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+
+  .map_div1 {
+    font-family: 'ChosunSm';
+    font-size: calc(0.8rem + 0.1vw);
+    color: #916939;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .map_div2 {
+    font-family: 'NanumSquare', sans-serif;
+    font-size: calc(0.8rem + 0.1vw);
+    margin-bottom: 10px;
+  }
+
+  .redred {
+    font-family: 'NanumSquare', sans-serif;
+    font-size: calc(0.8rem + 0.1vw);
+    color: red;
+  }
+}
+
 @media screen and (max-width: 550px) {
   .map2 {
     margin-left: 5px;
