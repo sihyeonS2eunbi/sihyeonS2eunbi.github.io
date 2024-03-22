@@ -343,6 +343,57 @@ tr > td > p {
   margin: 10px;
 }
 
+.section4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.f_title {
+  width: 90vw;
+}
+
+._916939_korean {
+  color: #916939;
+  font-family: 'ChosunSm';
+  font-size: calc(1.5rem + 1vw);
+}
+
+._916939_korean2 {
+  color: #916939;
+  font-family: 'ChosunSm';
+  font-size: calc(0.8rem + 1vw);
+}
+
+.money_box {
+  display: flex;
+  width: 90vw;
+  align-items: center;
+  border: 1px solid #916939;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.money_box > div {
+  color: #916939;
+  font-family: 'ChosunSm';
+  font-size: var(--font-size-ssm);
+  margin: 10px;
+}
+
+.money_name {
+  color: #916939;
+  font-family: 'ChosunSm';
+  font-size: var(--font-size-sm);
+}
+
+.money_2 {
+  margin-top: 10vh;
+}
+
 @media screen and (max-width: 450px) {
   .time {
     font-family: 'ChosunSm';
@@ -492,10 +543,6 @@ tr > td > p {
   .map_photo > img {
     width: 30vw;
     margin: 10px;
-  }
-
-  .section4 {
-    display: none;
   }
 }
 

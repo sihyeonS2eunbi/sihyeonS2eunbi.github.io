@@ -213,9 +213,72 @@
         </div>
       </div>
     </section>
+
+    <section style="background-color: white; height: 100vh" class="section4">
+      <div class="f_title">
+        <div class="_916939_korean">축하의 마음 전하기</div>
+        <hr style="width: 100%" />
+        <div class="_916939_korean2">축하의 마음을 전해보세요</div>
+      </div>
+
+      <div class="money">
+        <div class="money_1">
+          <div class="money_name">신랑측
+            <hr/>
+          </div>
+
+
+
+          <div class="money_box" onclick="on_click_money('농협 302-7107-5879-41')">
+            <div>권재일</div>
+            <div>(농협) 302-7107-5879-41</div>
+          </div>
+          <div class="money_box" onclick="on_click_money('농협 889-12-096915')">
+            <div>손현숙</div>
+            <div>(농협) 889-12-096915</div>
+          </div>
+          <div class="money_box" onclick="on_click_money('카카오 3333-07-4218143')">
+            <div>권시현</div>
+            <div>(카카오) 3333-07-4218143</div>
+          </div>
+        </div>
+
+        <div class="money_2">
+          <div class="money_1">
+            <div class="money_name">신부측
+              <hr/>
+            </div>          
+            <div class="money_box" onclick="on_click_money('농협 821016-52-081062')">
+              <div>박영모</div>
+            <div>(농협) 821016-52-081062</div>
+          </div>
+          <div>
+            <div class="money_box" onclick="on_click_money('농협 821016-52-148343')">
+              <div>문정순</div>
+
+              <div>(농협) 821016-52-148343</div>
+          </div>
+          <div>
+            <div class="money_box" onclick="on_click_money('농협 356-0071-9789-63')">
+              <div>박은비</div>
+
+              <div>(농협) 356-0071-9789-63</div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 
   <script>
     AOS.init();
+  </script>
+
+  <script>
+
+    function on_click_money(text) {
+      window.navigator.clipboard.writeText(text).then(alert("복사가 완료되었습니다."))
+    }
+
+
   </script>
 </html>
