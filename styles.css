@@ -88,7 +88,7 @@ html {
 
 .content {
   width: 100vw;
-  height: 50vh;
+  height: calc(var(--vh, 1vh) * 50);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -97,13 +97,13 @@ html {
 
 .pic {
   width: 100vw;
-  height: 50vh;
+  height: calc(var(--vh, 1vh) * 50);
   object-fit: cover;
 }
 
 .pic_container {
   position: absolute;
-  top: 35vh;
+  top: calc(var(--vh, 1vh) * 35);
   left: 1vw;
 }
 
@@ -119,7 +119,7 @@ html {
 .ment_container {
   position: fixed;
   right: 1vw;
-  top: 45vh;
+  top: calc(var(--vh, 1vh) * 45);
   width: 50vw;
   height: 10vw;
   background-image: url('./ment.png'); /* 배경 이미지로 설정 */
@@ -264,7 +264,7 @@ tr > td > p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100vw;
-  height: 50vh;
+  height: calc(var(--vh, 1vh) * 50);
   font-family: 'ChosunSm';
 }
 
@@ -272,7 +272,7 @@ tr > td > p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 100vw;
-  height: 50vh;
+  height: calc(var(--vh, 1vh) * 50);
 }
 
 .map_img {
@@ -405,7 +405,7 @@ tr > td > p {
 
 .swiper {
   width: 100vw;
-  height: 90vh;
+  height: calc(var(--vh, 1vh) * 90);
   overflow: hidden;
 }
 
@@ -477,7 +477,7 @@ tr > td > p {
 @media screen and (min-width: 700px) {
   .pic_container {
     position: absolute;
-    top: 30vh;
+    top: calc(var(--vh, 1vh) * 30);
     left: 1vw;
   }
 
@@ -547,14 +547,14 @@ tr > td > p {
 @media screen and (min-width: 1024px) {
   .pic {
     width: 100vw;
-    height: 50vh;
+    height: calc(var(--vh, 1vh) * 50);
     object-fit: cover;
   }
 
   .ment_container {
     position: fixed;
     right: 1vw;
-    top: 40vh;
+    top: calc(var(--vh, 1vh) * 40);
     width: 30vw;
     height: 10vw;
     background-image: url('./ment.png'); /* 배경 이미지로 설정 */
