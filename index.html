@@ -20,6 +20,15 @@
     <meta property="og:description" content="은비 💗 시현 모바일청접장">
   </head>
   <body>
+    <script>
+      function setScreenSize() {
+        let vh = window.innerHeight * 0.01;
+
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+      }
+
+      setScreenSize();
+    </script>
     <section style="background-color: #fff8f1" class="section" id="first">
       <div
         class="content"
